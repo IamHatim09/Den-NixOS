@@ -2,6 +2,13 @@
   # host aspect
   den.aspects.Matrix = {
     # host NixOS configuration
+    includes = [
+      <desktop/niri>
+      <theme/catppuccin>
+
+      <development/base>
+      <development/game>
+    ]
     nixos =
       { pkgs, ... }:
       {
