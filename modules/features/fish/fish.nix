@@ -22,7 +22,7 @@
         enableFishIntegration = true;
 
         settings = lib.importTOML ./bracketed-segments.toml;
-      }
+      };
     };
   };
 }

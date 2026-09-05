@@ -1,3 +1,4 @@
+{ __findfile, ... }:
 {
   # host aspect
   den.aspects.Matrix = {
@@ -8,7 +9,7 @@
 
       <development/base>
       <development/game>
-    ]
+    ];
     nixos =
       { pkgs, ... }:
       {
