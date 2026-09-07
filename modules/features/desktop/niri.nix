@@ -1,6 +1,6 @@
 { __findFile, ... }:
 {
-  den.ful.desktop.niri = {
+  den.ful.desktop.niri-desktop = {
     includes = [
       <WM/Niri>
       <bar/noctalia>
