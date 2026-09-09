@@ -1,6 +1,5 @@
-{ config, pkgs, ... }:
 {
-  den.default.nixos.boot = {
+  den.default.nixos.boot = { pkgs, config, ... }: {
     loader = {
       efi.canTouchEfiVariables = true;
       timeout = 0;
@@ -11,7 +10,7 @@
       "quiet"
       "spash"
     ];
+    kernelPackages = pkgs.linuxPackages_zen;
   };
-  kernelPackages = pkgs.linuxPackages_zen;
 }
 
