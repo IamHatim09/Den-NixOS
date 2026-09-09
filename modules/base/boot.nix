@@ -1,3 +1,4 @@
+{ config, pkgs, ... }:
 {
   den.default.nixos.boot = {
     loader = {
@@ -11,4 +12,6 @@
       "spash"
     ];
   };
+  kernelPackages = pkgs.linuxPackages_zen;
 }
+

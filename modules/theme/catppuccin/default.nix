@@ -1,8 +1,8 @@
-{ __findfile, ... }:
+{ den, ... }:
 {
-  den.ful.theme.catppuccin = {
+  den.aspects.catppuccin = {
     includes = [
-      <stylix>
+      den.aspects.stylix
       ({ host, ... }: { host.theme.scheme = ./scheme.yaml; })
     ];
     host.class.theme = {

@@ -1,16 +1,15 @@
-{ __findFile, ... }:
+{ den, ... }:
 {
-  den.ful.desktop.niri-desktop = {
-    includes = [
-      <WM/Niri>
-      <bar/noctalia>
-      <audio/pipewire>
-      <browser/zen>
-      <terminal/kitty>
-      <video/mpv>
-      <image/imv>
-      <music/rmpc>
-      <editor/helix>
+  den.aspects.niri-desktop = {
+    includes = with den.aspects; [
+      Niri
+      zen-browser
+      fish
+      kitty
+      rmpc
+      mpv
+      imv
+      helix
     ];
 
     homeManager = { pkgs, ...} : {

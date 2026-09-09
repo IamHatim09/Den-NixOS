@@ -1,6 +1,6 @@
 { lib, ... }:
 {
-  den.ful.shell.fish = {
+  den.aspects.fish = {
     homeManager = {
       programs.fish = {
         enable = true;

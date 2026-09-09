@@ -1,5 +1,5 @@
 {
-  den.ful.editor.helix = {
+  den.aspects.helix = {
     homeManager = { lib, pkgs, ... }: {
       programs.helix = {
         enable = true;

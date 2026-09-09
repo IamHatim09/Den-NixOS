@@ -1,5 +1,5 @@
 {
-  den.ful.WM.Niri.homeManager.programs.niri.settings.input = {
+  den.aspects.Niri.homeManager.programs.niri.settings.input = {
     keyboard = {
       xkb = {
         layout = "us,us";

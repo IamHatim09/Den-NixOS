@@ -1,5 +1,5 @@
 {
-  den.ful.terminal.kitty = {
+  den.aspects.kitty = {
     homeManager = {
       kitty = {
         enable = true;

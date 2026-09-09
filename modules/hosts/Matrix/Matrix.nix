@@ -1,14 +1,14 @@
-{ __findfile, ... }:
+{ den, ... }:
 {
   # host aspect
   den.aspects.Matrix = {
     # host NixOS configuration
-    includes = [
-      <desktop/niri>
-      <theme/catppuccin>
+    includes = with den.aspects; [
+      niri
+      catppuccin
 
-      <development/base>
-      <development/game>
+      base
+      game
     ];
     nixos =
       { pkgs, ... }:

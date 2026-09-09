@@ -1,8 +1,9 @@
-{ _findFile, ... }: {
-  den.ful.development.base = {
-    includes = [
-      <development/opencode>
-      <development/devenv>
+{ den, ... }:
+{
+  den.aspects.base = {
+    includes = with den.aspects; [
+      opencode
+      devenv
     ];
   };
 }

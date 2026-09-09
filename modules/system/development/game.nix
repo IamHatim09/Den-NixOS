@@ -1,5 +1,5 @@
 {
-  den.ful.development.game = {
+  den.aspects.game = {
     homeManager = { pkgs, ... }: {
       home.packages = [ pkgs.godot ];
     };

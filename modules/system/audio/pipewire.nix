@@ -1,5 +1,5 @@
 {
-  den.ful.audio.pipewire.nixos.services.pipewire = {
+  den.aspects.pipewire.nixos.services.pipewire = {
     enable = true;
     alsa.enable = true;
     jack.enable = true;

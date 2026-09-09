@@ -1,11 +1,11 @@
-{ __findfile, inputs, ... }:
+{ inputs, ... }:
 {
   flake-file.inputs = {
     niri-flake.url = "github:sodiboo/niri-flake";
     niri-flake.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  den.ful.WM.Niri = {
+  den.aspects.Niri = {
     nixos = {
       programs.niri = {
         enable = true;
