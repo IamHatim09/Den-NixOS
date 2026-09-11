@@ -1,6 +1,6 @@
 {
   den.hosts.x86_64-linux.Matrix = {
-    user.hatim = {
+    users.hatim = {
     };
     theme= {
       scheme = ../../theme/catppuccin/scheme.yaml;
