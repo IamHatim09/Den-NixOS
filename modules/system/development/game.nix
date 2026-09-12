@@ -1,6 +1,7 @@
+{ pkgs, ... }:
 {
   den.aspects.game = {
-    homeManager = { pkgs, ... }: {
+    homeManager = {
       home.packages = [ pkgs.godot ];
     };
   };

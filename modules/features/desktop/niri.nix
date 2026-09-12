@@ -1,4 +1,4 @@
-{ den, ... }:
+{ den, pkgs, ... }:
 {
   den.aspects.niri-desktop = {
     includes = with den.aspects; [
@@ -12,7 +12,7 @@
       helix
     ];
 
-    homeManager = { pkgs, ...} : {
+    homeManager = {
       home.packages = with pkgs; [
         telegram-desktop
       ];

@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, lib, pkgs, ... }:
 {
   flake-file.inputs = {
     niri-flake.url = "github:sodiboo/niri-flake";
@@ -11,7 +11,7 @@
         enable = true;
       };
     };
-    homeManager = { lib, pkgs, ... }: {
+    homeManager = {
       imports = [ inputs.niri-flake.homeModules.niri ];
       programs.niri = {
         enable = true;

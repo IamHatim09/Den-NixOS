@@ -1,4 +1,4 @@
-{den, ...}: {
+{ den, pkgs, ...}: {
   # user aspect
   den.aspects.hatim = {
     includes = [
@@ -7,12 +7,12 @@
       (den.batteries.user-shell "fish")
     ];
 
-    homeManager = {pkgs, ...}: {
+    homeManager = {
       home.packages = [pkgs.htop];
     };
 
     # user can provide NixOS configurations
     # to any host it is included on
-    provides.to-hosts.nixos = {pkgs, ...}: {};
+    provides.to-hosts.nixos = {};
   };
 }

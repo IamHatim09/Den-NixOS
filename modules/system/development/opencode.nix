@@ -1,5 +1,6 @@
+{ pkgs, pkgs-unstable, ... }:
 {
-  den.aspects.opencode.homeManager = { pkgs, pkgs-unstable, ... }: {
+  den.aspects.opencode.homeManager = {
     programs.opencode = {
       enable = true;
       packages = pkgs-unstable.opencode;

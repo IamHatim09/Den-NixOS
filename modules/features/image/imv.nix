@@ -1,6 +1,7 @@
+{ pkgs, ... }:
 {
   den.aspects.imv = {
-    homeManager = { pkgs, ... }: {
+    homeManager = {
       home.packages = with pkgs; [
         imv
       ];

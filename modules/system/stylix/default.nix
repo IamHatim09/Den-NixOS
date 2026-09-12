@@ -1,4 +1,4 @@
-{ inputs, lib, ... }:
+{ inputs, lib, pkgs, host, ... }:
 {
   flake-file.inputs = {
     stylix.url = "github:nix-community/stylix";
@@ -6,14 +6,13 @@
   };
 
   den.aspects.stylix = {
-    nixos = { pkgs, host, ... }: {
+    nixos = {
       imports = [ inputs.stylix.nixosModules.stylix ];
       stylix = {
         enable = true;
         base16Scheme = host.theme.scheme;
         polarity = host.theme.polarity;
         image = host.theme.wallpaper;
-        targets.regreet.enable = false;
 
         cursor = {
           package = pkgs.whitesur-cursors;
