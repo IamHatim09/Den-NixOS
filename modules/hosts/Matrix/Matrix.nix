@@ -5,6 +5,7 @@
     # host NixOS configuration
     includes = with den.aspects; [
       niri
+      sddm
       catppuccin
 
       base

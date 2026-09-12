@@ -1,5 +1,5 @@
 {
-  den.aspect.sddm.nixos = {
+  den.aspects.sddm.nixos = {
     services.xserver.enable = true;
     services.displayManager.sddm = {
       enable = true;
