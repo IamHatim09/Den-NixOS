@@ -3,7 +3,7 @@
   den.default.nixos = {
     console = {
       font = "ter-114n";
-      keymap = "us";
+      keyMap = "us";
       packages = with pkgs; [
         terminus_font
       ];
