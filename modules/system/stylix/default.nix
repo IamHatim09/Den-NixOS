@@ -13,6 +13,7 @@
         base16Scheme = host.theme.scheme;
         polarity = host.theme.polarity;
         image = host.theme.wallpaper;
+        targets.regreet.enable = false;
 
         cursor = {
           package = pkgs.whitesur-cursors;
