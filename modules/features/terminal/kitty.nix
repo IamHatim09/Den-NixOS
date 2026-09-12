@@ -1,7 +1,7 @@
 {
   den.aspects.kitty = {
     homeManager = {
-      kitty = {
+      programs.kitty = {
         enable = true;
         enableGitIntegration = true;
       };

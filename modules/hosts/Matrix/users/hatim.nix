@@ -4,6 +4,7 @@
     includes = [
       den.batteries.define-user
       den.batteries.primary-user
+      den.aspects.niri-desktop
     ];
 
     homeManager = { pkgs, ... }: {

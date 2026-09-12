@@ -4,7 +4,6 @@
   den.aspects.Matrix = {
     # host NixOS configuration
     includes = with den.aspects; [
-      niri-desktop
       sddm
       catppuccin
 
