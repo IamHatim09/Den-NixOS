@@ -7,7 +7,7 @@
       (den.batteries.user-shell "fish")
     ];
 
-    homeManager = {
+    homeManager = { pkgs, ... }: {
       home.packages = [pkgs.htop];
     };
 

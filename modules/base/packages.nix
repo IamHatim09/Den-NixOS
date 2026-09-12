@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  den.default.nixos = {
+  den.default.nixos = { pkgs, ... }: {
     environment.systemPackages = with pkgs;[
       bat
       duf
@@ -13,7 +13,7 @@
       jq
       just
       kitty.terminfo
-      rigrep
+      ripgrep
       tldr
       tree
       unzip

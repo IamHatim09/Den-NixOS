@@ -5,7 +5,7 @@
     stylix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  den.aspects.stylix = { host, ... }: {
+  den.aspects.stylix = { pkgs, host, ... }: {
     nixos = {
       imports = [ inputs.stylix.nixosModules.stylix ];
       stylix = {

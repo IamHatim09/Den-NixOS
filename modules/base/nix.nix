@@ -4,7 +4,7 @@
       "nix-command"
       "flakes"
     ];
-    use-xdg-based-directories = true;
+    # use-xdg-based-directories = true;
     accept-flake-config = true;
   };
 }
