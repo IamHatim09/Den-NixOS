@@ -3,6 +3,7 @@
   den.default.nixos = { pkgs, ... }: {
     environment.systemPackages = with pkgs;[
       bat
+      home-manager
       duf
       dust
       fd

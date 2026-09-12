@@ -10,6 +10,8 @@
 
       base
       game
+
+      hatim
     ];
     nixos =
       { pkgs, ... }:
