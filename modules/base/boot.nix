@@ -1,5 +1,5 @@
 {
-  den.default.nixos.boot = { pkgs, config, ... }: {
+  den.default.nixos.boot = {
     loader = {
       efi.canTouchEfiVariables = true;
       timeout = 0;
@@ -8,7 +8,6 @@
         enable = true;
         device = "nodev";
         efiSupport = true;
-        theme = pkgs.catppuccin-grub;
       };
     };
     consoleLogLevel = 4;
@@ -16,7 +15,6 @@
       "quiet"
       "spash"
     ];
-    kernelPackages = pkgs.linuxPackages_zen;
   };
 }
 

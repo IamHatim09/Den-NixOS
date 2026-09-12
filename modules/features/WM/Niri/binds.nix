@@ -1,5 +1,6 @@
+{ pkgs, ... }:
 {
-  den.aspects.Niri.homeManager = { pkgs, ... }: {
+  den.aspects.Niri.homeManager = {
     programs.niri.settings.binds = {
       "Mod+d".action.spawn = [ "rofi" ];
       "Mod+Return".action.spawn = "${pkgs.kitty}/bin/kitty";

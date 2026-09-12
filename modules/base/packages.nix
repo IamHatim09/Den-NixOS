@@ -1,5 +1,6 @@
+{ pkgs, ... }:
 {
-  den.default.nixos = { pkgs, ... }: {
+  den.default.nixos = {
     environment.systemPackages = with pkgs;[
       bat
       duf

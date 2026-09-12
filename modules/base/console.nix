@@ -1,5 +1,6 @@
+{ pkgs, ... }:
 {
-  den.default.nixos = { pkgs, ... }: {
+  den.default.nixos = {
     console = {
       font = "ter-114n";
       keymap = "us";
