@@ -1,5 +1,6 @@
+{ pkgs, ... }:
 {
-  den.default.nixos = { pkgs, ... }: {
+  den.default.nixos = {
     boot.kernelPackages = pkgs.linuxPackages_zen;
   };
 }
