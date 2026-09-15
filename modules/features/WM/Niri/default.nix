@@ -11,7 +11,7 @@
         enable = true;
       };
     };
-    homeManager = {
+    homeManager = { pkgs, lib, inputs, ... }: {
       imports = [ inputs.niri-flake.homeModules.niri ];
       programs.niri = {
         enable = true;
