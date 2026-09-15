@@ -1,7 +1,7 @@
 { inputs, lib, pkgs, ... }:
 {
   flake-file.inputs = {
-    niri-flake.url = "github:sodiboo/niri-flake";
+    niri-flake.url = "github:epireyn/niri-flake";
     niri-flake.inputs.nixpkgs.follows = "nixpkgs";
   };
 
