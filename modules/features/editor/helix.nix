@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 {
   den.aspects.helix = {
-    homeManager = {
+    homeManager = { pkgs, ... }: {
       programs.helix = {
         enable = true;
         defaultEditor = true;
