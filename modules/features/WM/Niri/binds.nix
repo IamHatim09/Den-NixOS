@@ -2,7 +2,7 @@
 {
   den.aspects.Niri.homeManager = { pkgs, ... }: {
     programs.niri.settings.binds = {
-      "Mod+d".action.spawn = [ "rofi" ];
+      "Mod+d".action.spawn = [ "rofi -show drun" ];
       "Mod+Return".action.spawn = "${pkgs.kitty}/bin/kitty";
 
       "Mod+h".action.focus-column-left = [ ];
