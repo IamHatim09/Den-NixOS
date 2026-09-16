@@ -10,7 +10,7 @@
       "Mod+j".action.focus-window-down = [ ];
       "Mod+k".action.focus-window-up = [ ];
       "Mod+u".action.focus-workspace-up = [ ];
-      "Mod+d".action.focus-workspace-down = [ ];
+      "Mod+i".action.focus-workspace-down = [ ];
 
       "Mod+Shift+r".action.switch-preset-window-height = [ ];
       "Mod+r".action.switch-preset-column-width = [ ];
@@ -20,7 +20,7 @@
       "Mod+Shift+j".action.move-window-down = [ ];
       "Mod+Shift+k".action.move-window-up = [ ];
       "Mod+Shift+u".action.move-window-to-workspace-up = [ ];
-      "Mod+Shift+d".action.move-window-to-workspace-down = [ ];
+      "Mod+Shift+i".action.move-window-to-workspace-down = [ ];
 
       "Mod+q".action.close-window = [ ];
       "Mod+f".action.maximize-column = [ ];

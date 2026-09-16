@@ -5,9 +5,9 @@
     zen-browser.inputs.nixpkgs.follows = "nixpkgs";
   };
   den.aspects.zen-browser = {
-    homeManager = {
+    homeManager = { pkgs, ... }: {
       # stylix.targets.zen-browser.profileNames = [ "default" ];
-      home.packages = [ pkgs.zen-browser ];
+      home.packages = [ inputs.zen-browser.packages.${pkgs.system}.default ];
     };
   };
 }
